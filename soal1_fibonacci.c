@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int a = 1, b = 1, c;
+
+    printf("Soal 1 - Deret Fibonacci\n");
+    printf("%d %d ", a, b);
+
+    for (int i = 3; i <= 8; i++) {
+        c = a + b;
+        printf("%d ", c);
+        a = b;
+        b = c;
+    }
+
+    printf("\n");
+    return 0;
+}
